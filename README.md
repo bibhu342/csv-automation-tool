@@ -1,62 +1,86 @@
-🧠 CSV Automation Tool (Python + AI Mock)
+# 🧠 CSV Automation Tool (Python + AI Mock)
 
-A lightweight Python script that reads prompts from a CSV file, generates mock AI responses, and writes them into a new CSV output file.
-Includes CLI arguments, timestamped runs, and logging for safe and repeatable automation.
+A lightweight and extensible Python script for automating prompt-response workflows using CSV files. Effortlessly read prompts from a CSV, generate mock (or real AI) responses, and export results—complete with logging and safe error handling.
 
-🚀 Features
+---
 
-Read and process input CSVs
+## 🚀 Features
 
-Generate mock or AI-based responses
+- **Easy CSV Processing**: Reads input prompts from CSV and writes responses to a new CSV file.
+- **Mock & AI Responses**: Uses mock responses by default; ready for real AI API integration.
+- **Robust Logging**: Detailed logs with timestamps ensure transparency and traceability.
+- **Flexible CLI**: Command-line arguments for custom input/output paths and configurations.
+- **Timestamped Outputs**: Option to create uniquely timestamped output files for each run.
+- **Safe & Repeatable**: Comprehensive error handling for reliable automation.
 
-Logging with timestamps
+---
 
-CLI arguments for input/output paths
+## 🗂️ Project Structure
 
-Optional timestamped output file creation
-
-Error handling for safe runs
-
-🧩 Project Structure
+```
 csv-automation-tool/
 │
-├── ai_responses_from_csv.py
-├── prompts.csv
-├── sample_output.csv
-├── requirements.txt
-└── README.md
+├── ai_responses_from_csv.py      # Main script
+├── prompts.csv                   # Sample input prompts
+├── sample_output.csv             # Example output
+├── requirements.txt              # Dependencies
+└── README.md                     # Project documentation
+```
 
-⚙️ Usage
+---
 
-Run default:
+## ⚙️ Usage
+
+### Basic Run
+
+```bash
 python ai_responses_from_csv.py
-Custom input/output:
+```
+
+### Custom Input/Output
+
+```bash
 python ai_responses_from_csv.py --input my_prompts.csv --output results.csv
-Timestamped output:
+```
+
+### Timestamped Output
+
+```bash
 python ai_responses_from_csv.py --timestamped
+```
 
-🧪 Sample Input
+---
 
-prompts.csv
-prompt
-Hello world
-Summarize AI in one line
+## 🧪 Sample Input/Output
 
-Output (sample_output.csv)
-Prompt,AI Response
-Hello world,Mock response for: Hello world
-Summarize AI in one line,Mock response for: Summarize AI in one line
+### Input (`prompts.csv`)
 
-🧠 Future Work
+| prompt                       |
+|------------------------------|
+| Hello world                  |
+| Summarize AI in one line     |
 
-Add real AI API integration (OpenAI / LangChain)
+### Output (`sample_output.csv`)
 
-Create JSON output option
+| Prompt                     | AI Response                              |
+|----------------------------|------------------------------------------|
+| Hello world                | Mock response for: Hello world           |
+| Summarize AI in one line   | Mock response for: Summarize AI in one line |
 
-Add web interface version (Streamlit)
+---
 
-👨‍💻 Author
+## 🔮 Future Enhancements
 
-Bibhudendu Behera
-Python & AI Automation Learner
+- Integrate with real AI APIs (OpenAI, LangChain, etc.)
+- Add JSON output support
+- Develop a web interface (e.g., using Streamlit)
+
+---
+
+## 👤 Author
+
+**Bibhudendu Behera**  
+Python & AI Automation Enthusiast  
 [LinkedIn Profile](https://www.linkedin.com/in/bibhudendu-behera-b5375b5b)
+
+---
