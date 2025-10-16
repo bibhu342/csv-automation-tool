@@ -1,0 +1,3 @@
+# requirements.txt
+# Python built-in modules are already included; no installs required.
+# For AI API integration later, we'll add openai / langchain etc.
